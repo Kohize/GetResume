@@ -5,7 +5,7 @@ import NavLinkButton from '../NavLinkButton.jsx/NavLinkButton';
 
 export default function Header() {
   return (
-    <header className="p-5 flex justify-between bg-zinc-300  items-center">
+    <header className="p-5 flex justify-between bg-zinc-100  items-center">
       <Link>
         <span className="font-bold text-slate-900 text-2xl">GetResume</span>
       </Link>
