@@ -3,7 +3,7 @@ import Step from '../../components/Step/Step';
 
 export default function Steps() {
   return (
-    <section className="p-10 bg-gray-200">
+    <section className="p-20 bg-gray-200">
       <div>
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-semibold text-4xl mb-5">How it works</h2>
