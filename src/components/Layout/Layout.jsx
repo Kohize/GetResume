@@ -10,7 +10,7 @@ export default function Layout() {
       <main className="h-10 mb-auto">
         <Outlet></Outlet>
       </main>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

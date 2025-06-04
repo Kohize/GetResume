@@ -4,11 +4,12 @@ import Showcase from '../Showcase/Showcase';
 
 export default function Hero() {
   return (
-    <section className="p-15 bg-slate-300 flex flex-col items-center">
+    <section className="p-15 bg-gradient-right flex flex-col items-center">
       <div>
         <div className="flex flex-col items-center justify-center gap-y-10 mb-15">
           <h1 className="text-5xl font-semibold">
-            Build Your <span className="text-6xl">Perfect Resume</span> in
+            Build Your{' '}
+            <span className="text-6xl text-indigo-600">Perfect Resume</span> in
             Minutes
           </h1>
           <p className="font-semibold text-center text-xl">
