@@ -4,7 +4,7 @@ import Showcase from '../Showcase/Showcase';
 
 export default function Hero() {
   return (
-    <section className="p-15 bg-gradient-right flex flex-col items-center">
+    <section className="p-15 bg-gray-200 flex flex-col items-center">
       <div>
         <div className="flex flex-col items-center justify-center gap-y-10 mb-15">
           <h1 className="text-5xl font-semibold">
