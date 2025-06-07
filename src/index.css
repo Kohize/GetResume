@@ -3,3 +3,4 @@
 @theme {
   --font-display: 'Ubuntu', 'sans-serif';
 }
+@custom-variant dark (&:where(.dark, .dark *));

@@ -3,12 +3,12 @@ import Button from '../../components/Button/Button';
 
 export default function Callout() {
   return (
-    <section className="p-20 bg-white">
+    <section className="p-20 bg-white  dark:bg-gray-800">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="font-semibold text-4xl mb-5">
+        <h2 className="font-semibold text-4xl mb-5 dark:text-white">
           Ready to Build Your Perfect Resume?
         </h2>
-        <p className="font-light text-2xl mb-5">
+        <p className="font-light text-2xl mb-5 dark:text-white">
           Join thousands of job seekers who've already created stunning resumes
           with ResumeFast
         </p>

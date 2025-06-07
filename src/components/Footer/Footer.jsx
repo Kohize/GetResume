@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default function Footer() {
   return (
-    <div className="py-8 px-20 bg-gray-200 grid grid-cols-3 justify-center">
+    <footer className="py-8 px-20 bg-gray-200 grid grid-cols-3 justify-center dark:bg-gray-900">
       <p className="font-bold text-xl text-gray-500">GetResume</p>
       <div className="flex justify-center">
         <Link
@@ -16,6 +16,6 @@ export default function Footer() {
       <p className="text-gray-500 text-end">
         © 2025 GetResume. All rights reserved.
       </p>
-    </div>
+    </footer>
   );
 }
