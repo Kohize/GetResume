@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../../components/Input/Input';
+import EducationForm from '../../components/EducationForm/EducationForm';
 
 export default function Form() {
   return (
@@ -13,10 +14,11 @@ export default function Form() {
       <Input html={'summary'} type={'text'} fieldType={'textarea'}>
         Summary
       </Input>
-      <Input html={'firstName'} type={'text'} fieldType={'select'}>
+      <Input html={'job'} type={'text'} fieldType={'select'}>
         Select a Profession
       </Input>
       <label htmlFor="profession"></label>
+      <EducationForm />
     </form>
   );
 }
