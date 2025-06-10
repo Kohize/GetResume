@@ -7,6 +7,7 @@ const initialState = {
   summary:
     'Highly motivated and detail-oriented software engineer with experience in developing scalable and maintainable software solutions. Proficient in a range of programming languages and comfortable working in a fast-paced environment.',
   education: [],
+  experience: [],
 };
 
 const resumeSlice = createSlice({
@@ -46,6 +47,29 @@ const resumeSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
+    addExperience: (state) => {
+      state.experience.push({
+        id: nanoid(),
+        title: '',
+        company: '',
+        fromDate: '',
+        toDate: '',
+        description: '',
+      });
+    },
+    setExperience: (state, action) => {
+      const { id, field, value } = action.payload;
+      const experienceItem = state.experience.find((item) => item.id === id);
+
+      if (experienceItem) {
+        experienceItem[field] = value;
+      }
+    },
+    removeExperience: (state, action) => {
+      state.experience = state.experience.filter(
+        (item) => item.id !== action.payload
+      );
+    },
   },
 });
 
@@ -57,5 +81,8 @@ export const {
   setEducation,
   addEducation,
   removeEducation,
+  addExperience,
+  setExperience,
+  removeExperience,
 } = resumeSlice.actions;
 export default resumeSlice.reducer;

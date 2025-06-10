@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from '../../components/Input/Input';
 import EducationForm from '../../components/EducationForm/EducationForm';
+import ExperienceForm from '../../components/ExperienceForm/ExperienceForm';
 
 export default function Form() {
   return (
@@ -19,6 +20,7 @@ export default function Form() {
       </Input>
       <label htmlFor="profession"></label>
       <EducationForm />
+      <ExperienceForm />
     </form>
   );
 }
