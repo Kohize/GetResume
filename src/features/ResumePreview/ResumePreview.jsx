@@ -11,13 +11,13 @@ export default function ResumePreview() {
     resumeData;
   console.log(experience.toDate);
   return (
-    <section className="bg-white rounded-lg grid grid-cols-2 grid-rows-[auto_auto_1fr]">
-      <div className="p-5 border-b-1 border-gray-300">
+    <section className="bg-white rounded-lg grid grid-cols-2 auto-rows-[minmax(200px, auto)]">
+      <div className="p-3 border-b-1 border-gray-300">
         <h3 className="font-semibold text-3xl">{firstName}</h3>
         <h3 className="font-semibold text-3xl mb-3">{secondName}</h3>
         <p className="text-xs text-zinc-600 uppercase">{job}</p>
       </div>
-      <div className="p-5 flex flex-col border-b-1 border-gray-300 text-sm">
+      <div className="p-3 flex flex-col border-b-1 border-gray-300 text-sm">
         <div className="flex items-center gap-x-1">
           <img src={githubIcon} alt="githubIcon" className="w-4 h-4" />
           <p>github.com/kohize</p>
@@ -31,13 +31,40 @@ export default function ResumePreview() {
           <p>linked.in/kohize</p>
         </div>
       </div>
-      <div className="p-5 border-b-1 border-gray-300">
+      <div className="p-3 border-b-1 border-gray-300">
         <h3 className="font-semibold text-gray-400 uppercase">
           Profile Summary
         </h3>
-        <p className="text-sm">{summary}</p>
+        <p className="text-xs max-w-60">{summary}</p>
       </div>
-      <div className="p-5 border-b-1 border-gray-300">
+      <div>
+        <h3>Skills</h3>
+      </div>
+      <div className="p-3 border-b-1 border-gray-300 ">
+        <h3 className="font-semibold text-gray-400 uppercase">
+          Professional Experience
+        </h3>
+        {experience.map((item) => (
+          <div key={item.id}>
+            <div className="flex gap-x-2 items-center">
+              <p>●</p>
+              <h3 className="text-gray-500 uppercase text-sm">{item.title}</h3>
+            </div>
+            <div>
+              <div className="flex justify-between">
+                <p className="text-sm text-gray-500 font-semibold">
+                  {item.company}
+                </p>
+                <p className="text-sm text-gray-500">
+                  {item.fromDate} - {item.toDate}
+                </p>
+              </div>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="border-b-1 border-gray-300 ">
         <h3 className="font-semibold text-gray-400 uppercase">Education</h3>
         {education.map((item) => (
           <div key={item.id} className="mb-2">
@@ -51,30 +78,6 @@ export default function ResumePreview() {
             </p>
             <p className="text-xs font-semibold"> {item.gpa} GPA</p>
           </div>
-        ))}
-      </div>
-      <div className="p-5 border-b-1 border-gray-300">
-        <h3 className="font-semibold text-gray-400 uppercase">
-          Professional Experience
-        </h3>
-        {experience.map((item) => (
-          <ul key={item.id} className="px-5 mb-5">
-            <div className="flex gap-x-2 items-center">
-              <p>●</p>
-              <h3 className="text-gray-500 uppercase text-sm">{item.title}</h3>
-            </div>
-            <li className="px-5">
-              <div className="flex justify-between">
-                <p className="text-sm text-gray-500 font-semibold">
-                  {item.company}
-                </p>
-                <p className="text-sm text-gray-500">
-                  {item.fromDate} - {item.toDate}
-                </p>
-              </div>
-              <p>{item.description}</p>
-            </li>
-          </ul>
         ))}
       </div>
     </section>
