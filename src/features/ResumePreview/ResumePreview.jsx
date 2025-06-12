@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import graduateIcon from '../../../public/graduation-hat-svgrepo-com.svg';
-import emailIcon from '../../../public/email-svgrepo-com.svg';
-import githubIcon from '../../../public/github-mark.svg';
-import linkedInIcon from '../../../public/icons8-linkedin.svg';
+import graduateIcon from '../../assets/graduation-hat-svgrepo-com.svg';
+import emailIcon from '../../assets/email-svgrepo-com.svg';
+import githubIcon from '../../assets/github-mark.svg';
+import linkedInIcon from '../../assets/icons8-linkedin.svg';
 
 export default function ResumePreview() {
   const resumeData = useSelector((state) => state.initialResumeData);
@@ -11,7 +11,7 @@ export default function ResumePreview() {
     resumeData;
   console.log(experience.toDate);
   return (
-    <section className="bg-white rounded-lg grid grid-cols-2 auto-rows-[minmax(200px, auto)]">
+    <section className="bg-white rounded-lg grid grid-cols-2 auto-rows-[minmax(200px, 250px)]">
       <div className="p-3 border-b-1 border-gray-300">
         <h3 className="font-semibold text-3xl">{firstName}</h3>
         <h3 className="font-semibold text-3xl mb-3">{secondName}</h3>
