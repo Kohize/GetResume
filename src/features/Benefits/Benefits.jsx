@@ -1,4 +1,3 @@
-import React from 'react';
 import Benefit from '../../components/Benefit/Benefit';
 
 export default function Benefits() {
