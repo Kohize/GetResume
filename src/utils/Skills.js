@@ -1,0 +1,52 @@
+const skills = {
+  softwareDeveloper: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'NodeJS',
+    'MongoDB',
+    'Python',
+    'TensorFlow',
+    'PyTorch',
+  ],
+  webDeveloper: ['HTML', 'CSS', 'JavaScript', 'React'],
+  frontEndDeveloper: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'TypeScript',
+    'Angular',
+  ],
+  backEndDeveloper: ['NodeJS', 'MongoDB', 'Python', 'TensorFlow', 'PyTorch'],
+  fullStackDeveloper: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'NodeJS',
+    'MongoDB',
+    'Python',
+    'TensorFlow',
+    'PyTorch',
+  ],
+  mobileDeveloper: [
+    'Swift',
+    'Objective-C',
+    'Kotlin',
+    'Flutter',
+    'React Native',
+  ],
+  uiDesigner: ['Figma', 'CSS', 'Tailwind', 'Framer'],
+  gameDeveloper: [
+    'C#',
+    'Unity',
+    'Unreal Engine',
+    'C++',
+    'C',
+    'OpenGL',
+    'OpenGL ES',
+  ],
+  dataScientsist: ['Python', 'TensorFlow', 'PyTorch'],
+};
+
+export { skills };

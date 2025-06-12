@@ -6,21 +6,11 @@ import {
   setJob,
   setSummary,
 } from '../../features/ResumePreview/ResumeSlice';
+import { PROFESSIONS } from '../../utils/Professions';
 
 export default function Input({ html, type, children, fieldType }) {
   const resumeData = useSelector((state) => state.initialResumeData);
   const dispatch = useDispatch();
-  const PROFESSIONS = [
-    'Web Developer',
-    'Front-End Developer',
-    'Back-End Developer',
-    'Full-Stack Developer',
-    'Mobile Developer',
-    'UI Designer',
-    'Game Developer',
-    'Data Scientist',
-    'Software Developer',
-  ];
 
   const ACTIONS = {
     firstName: setFirstName,
@@ -41,7 +31,7 @@ export default function Input({ html, type, children, fieldType }) {
       <input
         type={type}
         onChange={handleOnChange}
-        className="bg-zinc-300 rounded-md"
+        className="bg-zinc-300 rounded-md p-2"
         value={resumeData[html]}
       />
     ),
@@ -50,7 +40,7 @@ export default function Input({ html, type, children, fieldType }) {
         name={html}
         onChange={handleOnChange}
         value={resumeData[html]}
-        className="bg-zinc-300 rounded-md"></textarea>
+        className="bg-zinc-300 rounded-md p-2"></textarea>
     ),
     select: (
       <select
@@ -58,7 +48,7 @@ export default function Input({ html, type, children, fieldType }) {
         id="profession"
         value={resumeData[html]}
         onChange={handleOnChange}
-        className="bg-zinc-300 rounded-md">
+        className="bg-zinc-300 rounded-md p-2">
         {PROFESSIONS.map((item) => (
           <option key={item} value={item}>
             {item}
