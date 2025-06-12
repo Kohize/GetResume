@@ -12,7 +12,7 @@ export default function ExperienceForm() {
   );
   const dispatch = useDispatch();
   return (
-    <div className="flex flex-col gap-x-5 gap-y-5">
+    <div className="flex flex-col gap-x-5 gap-y-5 dark:text-white">
       {experienceData.map((item) => (
         <div key={item.id}>
           <div className="flex justify-between">

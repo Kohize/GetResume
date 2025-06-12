@@ -15,7 +15,7 @@ export default function EducationForm() {
 
   return (
     <div>
-      <div className="flex flex-col gap-x-5 gap-y-5 py-5">
+      <div className="flex flex-col gap-x-5 gap-y-5 py-5 dark:text-white">
         {educationData.map((item) => (
           <div key={item.id} className="border-b-1 border-gray-900 py-5">
             <div className="flex justify-between">
@@ -50,7 +50,7 @@ export default function EducationForm() {
           className="bg-indigo-600 text-white py-2 px-3 rounded-md cursor-pointer hover:opacity-70">
           +
         </button>
-        <p className="font-sm ">Add Education</p>
+        <p className="font-sm dark:text-white">Add Education</p>
       </div>
     </div>
   );

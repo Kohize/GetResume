@@ -6,7 +6,7 @@ export default function EducationPreview() {
   const resumeData = useSelector((state) => state.initialResumeData);
   const { education } = resumeData;
   return (
-    <div className="border-b-1 border-gray-300 p-3 min-h-32">
+    <div className=" border-gray-300 p-3 min-h-32">
       <h3 className="font-semibold text-gray-400 uppercase">Education</h3>
       {education.map((item) => (
         <div key={item.id} className="mb-2">

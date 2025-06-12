@@ -5,7 +5,7 @@ export default function ExperiencePreview() {
   const resumeData = useSelector((state) => state.initialResumeData);
   const { experience } = resumeData;
   return (
-    <div className="p-3 border-b-1 border-gray-300 ">
+    <div className="p-3 border-gray-300">
       <h3 className="font-semibold text-gray-400 uppercase">
         Professional Experience
       </h3>

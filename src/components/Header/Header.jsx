@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header className="p-5 flex justify-between bg-gray-100 items-center dark:bg-gray-800">
       <Link>
-        <span className="font-bold text-indigo-600 text-2xl hover:animate-pulse">
+        <span className="font-bold text-indigo-600 text-2xl hover:animate-pulse dark:text-white">
           GetResume
         </span>
       </Link>

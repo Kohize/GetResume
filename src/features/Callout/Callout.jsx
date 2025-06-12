@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button';
 
 export default function Callout() {
   return (
-    <section className="p-20 bg-white  dark:bg-gray-800">
+    <section className="p-20 bg-white  dark:bg-gray-900 shadow-lg">
       <div className="flex flex-col justify-center items-center">
         <h2 className="font-semibold text-4xl mb-5 dark:text-white">
           Ready to Build Your Perfect Resume?

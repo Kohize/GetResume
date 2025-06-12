@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default function Footer() {
   return (
-    <footer className="py-8 px-20 bg-gray-200 grid grid-cols-3 justify-center dark:bg-gray-900">
+    <footer className="py-8 px-20 bg-gray-200 grid grid-cols-3 justify-center dark:bg-gray-800 shadow-xl">
       <p className="font-bold text-xl text-gray-500">GetResume</p>
       <div className="flex justify-center">
         <Link

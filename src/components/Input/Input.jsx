@@ -60,7 +60,9 @@ export default function Input({ html, type, children, fieldType }) {
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={html} className="font-bold text-lg text-center ">
+      <label
+        htmlFor={html}
+        className="font-bold text-lg text-center dark:text-white">
         {children}
       </label>
       {fieldVariants[fieldType] || null}
