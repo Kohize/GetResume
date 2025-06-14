@@ -6,7 +6,7 @@ export default function Mission() {
           Our <span className="text-indigo-600 text-4xl">Mission</span>
         </h3>
 
-        <div className="rounded-md shadow-xl flex flex-col items-center justify-center p-15 gap-y-10 bg-zinc-200">
+        <div className="rounded-md shadow-xl flex flex-col items-center justify-center p-15 gap-y-10 bg-zinc-200 max-w-2xl">
           <div className="w-25 h-25 rounded-full bg-indigo-300 flex justify-center items-center">
             <span className="text-3xl">🎯</span>
           </div>
