@@ -9,7 +9,7 @@ export default function Benefits() {
       <p className="font-light text-2xl mb-20 dark:text-white">
         Experience the future of resume building with our intelligent platform
       </p>
-      <ul className="grid grid-cols-3 gap-5">
+      <ul className="grid grid-cols-1 md-grid-cols-3 gap-5">
         <Benefit
           color={'lightblue'}
           title={'Real-Time Preview'}

@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="p-20 bg-gray-200 flex flex-col items-center dark:bg-gray-900">
       <div>
         <div className="flex flex-col items-center justify-center gap-y-10 mb-15">
-          <h1 className="text-5xl font-semibold dark:text-white">
+          <h1 className="text-5xl font-semibold text-center dark:text-white">
             Build Your{' '}
             <span className="text-6xl text-indigo-600">Perfect Resume</span> in
             Minutes
