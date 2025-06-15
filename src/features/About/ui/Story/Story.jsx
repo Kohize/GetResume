@@ -2,7 +2,7 @@ import StoryCard from './StoryCard';
 
 export default function Story() {
   return (
-    <section className="flex flex-col items-center p-20 bg-gray-200 dark:bg-gray-800">
+    <section className="flex flex-col items-center p-20 bg-gray-200 dark:bg-gray-900">
       <h2 className="font-semibold text-4xl mb-5 dark:text-white text-center">
         The Story Behind <span className="text-indigo-600">ResumeFast</span>
       </h2>
